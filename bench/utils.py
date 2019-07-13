@@ -459,7 +459,7 @@ def update_yarn_packages(bench_path='.'):
 	for app in os.listdir(apps_dir):
 		app_path = os.path.join(apps_dir, app)
 		if os.path.exists(os.path.join(app_path, 'package.json')):
-			exec_cmd('yarn install', cwd=app_path)
+			exec_cmd('yarn', cwd=app_path)
 
 
 def update_npm_packages(bench_path='.'):
